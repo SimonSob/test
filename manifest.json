@@ -7,8 +7,8 @@
     "theme_color": "#4CAF50",
     "icons": [
     {
-    "src": "/icons/icons8-app-500",
-    "src": "/icons/icons8-hitler-100",
+    "src": "/icons/icons8-app-500.png",
+    "src": "/icons/icons8-hitler-100.png",
     "sizes": "192x192",
     "type": "image/png"
     },

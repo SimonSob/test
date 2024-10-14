@@ -16,25 +16,25 @@ function Calculate()
     const a= document.getElementById("a").value;
     const o= document.getElementById("o").value;
 
-    let res;
+    let vysledek;
 
-    if(u == null)
+    if(u == NaN && r != NaN && i != NaN)
     {
-        u = r*
-        document.getElementById('vysledek').innerText = vysledek;
+        vysledek = r*i
+        document.getElementById("vysledek").innerHTML = vysledek;
     }
-    else if(r == null)
+    else if(r == NaN && u != NaN && i != NaN)
     {
-        r = u/i
-        document.getElementById('vysledek').innerText = vysledek;
+        vysledek = u/i
+        document.getElementById("vysledek").innerHTML = vysledek;
     }
-    else if(i == null)
+    else if(i == NaN && r != NaN && u != NaN)
     {
-        i = u/r
-        document.getElementById('vysledek').innerText = vysledek;
+        vysledek = u/r
+        document.getElementById("vysledek").innerHTML = vysledek;
     }
     else
     {
-        res = "nelze";
+        vysledek = "nelze";
     }
 }

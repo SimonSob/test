@@ -3,11 +3,13 @@ body
     align-items: center;
     align-content: center;
     align-self: center;
+    margin: auto;
 }
 
 div { 
     margin: auto;
     display: block;
+    text-align: center;
     align-items: center;
     align-content: center;
     align-self: center;
