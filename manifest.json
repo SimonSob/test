@@ -1,6 +1,6 @@
 {
-    "name": "KvadRov",
-    "short_name": "KV-rov",
+    "name": "test",
+    "short_name": "tst",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",

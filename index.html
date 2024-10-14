@@ -9,19 +9,31 @@
     <script src="app.js"></script>
 </head>
 <body>
-    
-<form action="">
-    <label for="u">Napětí[V]:</label>
-    <input type="number" id="u" name ="u"/>
-    <label for="a">Proud[I]:</label>
-    <input type="number" id="a" name="a">
-    <label for="o">Odpor[Ω]:</label>
-    <input type="number" id="o" name="o">
-    <input type="button" id="vypocet" value="vypocitej" onclick="Calculate()">
-</form>
+    <div>
+        <form action="">
+
+            <label for="u">Napětí[V]:</label>
+            <br>
+            <input type="number" id="u" name ="u"/>
+            <br>
+            <label for="i">Proud[I]:</label>
+            <br>
+            <input type="number" id="i" name="i">
+            <br>
+            <label for="o">Odpor[Ω]:</label>
+            <br><input type="number" id="o" name="o">
+            <p></p>
+            <input type="button" id="vypocet" value="vypocitej" onclick="Calculate()">
+            <p id="vysledek"></p>
+        </form>
+    </div>
+
 
 <script>
-    
+    function Calculate()
+    {
+
+    }
 </script>
 
 </body>
