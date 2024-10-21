@@ -24,23 +24,23 @@ function Calculate()
 
     if(isNaN(u) && !isNaN(o) && !isNaN(i))
     {
-        console.log("fjdfjkf");
         vysledek = o*i;
-        document.getElementById('vysledek').innerHTML = vysledek;
+        document.getElementById('u').value = vysledek;
         
     }
     else if(isNaN(o) && !isNaN(u) && !isNaN(i))
     {
         vysledek = u/i;
-        document.getElementById('vysledek').innerHTML = vysledek;
+        document.getElementById('o').value = vysledek;
     }
     else if(isNaN(i) && !isNaN(o) && !isNaN(u))
     {
         vysledek = u/o;
-        document.getElementById('vysledek').innerHTML = vysledek;
+        document.getElementById('i').value = vysledek;
     }
     else if(isNaN(o) && isNaN(i) && isNaN(u) )
     {
+
         vysledek = "nelze";
         document.getElementById('vysledek').innerHTML = vysledek;
     }
