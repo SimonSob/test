@@ -14,7 +14,7 @@ function Calculate()
 {
     
     const u= parseFloat(document.getElementById("u").value);
-    const a= parseFloat(document.getElementById("i").value);
+    const i= parseFloat(document.getElementById("i").value);
     const o = parseFloat(document.getElementById("o").value);
 
     
@@ -25,23 +25,29 @@ function Calculate()
     if(isNaN(u) && !isNaN(o) && !isNaN(i))
     {
         console.log("fjdfjkf");
-        vysledek = o*i
+        vysledek = o*i;
         document.getElementById('vysledek').innerHTML = vysledek;
         
     }
     else if(isNaN(o) && !isNaN(u) && !isNaN(i))
     {
-        vysledek = u/i
+        vysledek = u/i;
         document.getElementById('vysledek').innerHTML = vysledek;
     }
-    else if( isNaN(i) && !isNaN(o) && !isNaN(u))
+    else if(isNaN(i) && !isNaN(o) && !isNaN(u))
     {
-        vysledek = u/o
+        vysledek = u/o;
+        document.getElementById('vysledek').innerHTML = vysledek;
+    }
+    else if(isNaN(o) && isNaN(i) && isNaN(u) )
+    {
+        vysledek = "nelze";
         document.getElementById('vysledek').innerHTML = vysledek;
     }
     else
     {
         vysledek = "nelze";
+        document.getElementById('vysledek').innerHTML = vysledek;
     }
 
 
