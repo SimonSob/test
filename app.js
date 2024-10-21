@@ -12,29 +12,38 @@ if ('serviceWorker' in navigator) {
 
 function Calculate()
 {
-    const u= document.getElementById("u").value;
-    const a= document.getElementById("a").value;
-    const o= document.getElementById("o").value;
+    
+    const u= parseFloat(document.getElementById("u").value);
+    const a= parseFloat(document.getElementById("i").value);
+    const o = parseFloat(document.getElementById("o").value);
 
+    
     let vysledek;
 
-    if(u == NaN && r != NaN && i != NaN)
+    
+
+    if(isNaN(u) && !isNaN(o) && !isNaN(i))
     {
-        vysledek = r*i
-        document.getElementById("vysledek").innerHTML = vysledek;
+        console.log("fjdfjkf");
+        vysledek = o*i
+        document.getElementById('vysledek').innerHTML = vysledek;
+        
     }
-    else if(r == NaN && u != NaN && i != NaN)
+    else if(isNaN(o) && !isNaN(u) && !isNaN(i))
     {
         vysledek = u/i
-        document.getElementById("vysledek").innerHTML = vysledek;
+        document.getElementById('vysledek').innerHTML = vysledek;
     }
-    else if(i == NaN && r != NaN && u != NaN)
+    else if( isNaN(i) && !isNaN(o) && !isNaN(u))
     {
-        vysledek = u/r
-        document.getElementById("vysledek").innerHTML = vysledek;
+        vysledek = u/o
+        document.getElementById('vysledek').innerHTML = vysledek;
     }
     else
     {
         vysledek = "nelze";
     }
+
+
+
 }
